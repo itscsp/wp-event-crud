@@ -13,4 +13,6 @@ A Events CRUD Plugin, Admin can create, read, update and delete events.
 1. Upload the plugin files to the `/wp-content/plugins/wp-events-crud` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 
+## Usage
+- Add ```[events_list]``` this shortcode will display all event on the page you added to.
 
