@@ -1,3 +1,11 @@
+/* Root Styles */
+
+:root {
+  --event-primary-color:#0073e6;
+  --event-black: #000;
+  --event-white: #fff;
+}
+
 /* Event Container */
 .event {
   width: 90%;
@@ -44,7 +52,7 @@
 
 /* Event Item */
 .event__item {
-  background-color: #fff;
+  background-color: var(--event-white);
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -86,7 +94,7 @@
 }
 
 .event__location svg {
-  fill: #0073e6;
+  fill: var(--event-primary-color);
   height: 16px;
   width: 16px;
 }
@@ -113,8 +121,8 @@
 }
 
 .event__toggle {
-  background-color: #0073e6;
-  color: #fff;
+  background-color: var(--event-primary-color);
+  color: var(--event-white);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -124,7 +132,7 @@
 }
 
 .event__toggle:hover {
-  background-color: #005bb5;
+  background-color: var(--event-primary-color);
 }
 
 /* Responsive Design */
