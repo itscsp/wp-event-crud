@@ -29,10 +29,13 @@ class Event_Shortcode
         error_log("Styles and scripts loaded for Event Shortcode.");
     }
 
-    public function render_events_list()
+     public function render_events_list()
     {
         $default_message = get_option('events_manager_default_message', '');
         $code_of_conduct = get_option('events_manager_code_of_conduct', '');
+
+        // Get today's date in the appropriate format
+        $today = date('Y-m-d');
 
         $query = new WP_Query([
             'post_type' => 'event',
@@ -40,6 +43,14 @@ class Event_Shortcode
             'meta_key' => '_event_date',
             'orderby' => 'meta_value',
             'order' => 'ASC',
+            'meta_query' => [
+                [
+                    'key' => '_event_date',
+                    'value' => $today,
+                    'compare' => '>=',
+                    'type' => 'DATE',
+                ],
+            ],
         ]);
 
         $events = $query->posts;
