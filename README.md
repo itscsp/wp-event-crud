@@ -19,3 +19,6 @@ A Events CRUD Plugin, Admin can create, read, update and delete events.
 - You can change event manager setting in settings > Events Manager (https://dev-kirantester.pantheonsite.io/wp-admin/options-general.php?page=events-manager-settings)
 - Output Screenshot: [click here](https://prnt.sc/co2rov-auWsC)
 
+## Documentation
+- Chcek this docs (https://docs.google.com/document/d/1TWkPMu6-QsUP-1-BuXyUzY2Bw75VDA8GitCBQvBsK4Q/edit?usp=sharing)
+
