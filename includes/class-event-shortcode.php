@@ -40,6 +40,7 @@ class Event_Shortcode
         $query = new WP_Query([
             'post_type' => 'event',
             'posts_per_page' => -1,
+            'post_status' => 'publish',
             'meta_key' => '_event_date',
             'orderby' => 'meta_value',
             'order' => 'ASC',
